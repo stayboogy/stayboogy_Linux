@@ -1,0 +1,8 @@
+dev/sda1
+dev/sda2
+
+
+set root=(hd0,gpt2)
+linux (hd0,gpt2)/vmlinux root=/dev/sda2
+initrd (hd0,gpt2)/initrd.img
+boot

@@ -1,0 +1,5 @@
+sudo find -type d -name ".git" -exec rm -rf {} \;
+
+sudo find -type d -name ".repo" -exec rm -rf {} \;
+
+sudo find -type f -name "CameraParameters.h"

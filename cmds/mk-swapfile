@@ -1,0 +1,11 @@
+sudo fallocate -l 4096m /mnt/myswap.swap
+sudo chmod 600 /mnt/myswap.swap
+sudo dd if=/dev/zero of=/mnt/myswap.swap bs=1024 count=4194304
+sudo chmod 600 /mnt/myswap.swap
+sudo mkswap /mnt/myswap.swap
+sudo swapon /mnt/myswap.swap
+swappiness=10
+sudo gedit /etc/fstab
+# add to fstab
+/mnt/myswap.swap	none	swap	sw	0	0
+

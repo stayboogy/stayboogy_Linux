@@ -1,0 +1,24 @@
+sudo fsarchiver savedir -Z 9 /path/to/backup.fsa /path/to/directory/to/be/backed/up
+
+/home/m/Stayboogy /mnt/android/stayboogy-test.fsa
+
+sudo fsarchiver savedir -Z 9 /mnt/android/stayboogy-test.fsa /home/m/Stayboogy
+
+/mnt/recovery/AOSP-REPO/home-m-AndroidDev-twrp11.fsa
+
+sudo fsarchiver restdir /mnt/recovery/AOSP-REPO/home-m-AndroidDev-twrp11.fsa /mnt/android/ANDROID/
+
+sudo fsarchiver savedir -Z 9 /mnt/recovery/lineage-19.1.fsa /mnt/android/ANDROID/lineage-19.1
+
+sudo fsarchiver savedir -Z 9 /mnt/recovery/twrp11-built.fsa /mnt/android/ANDROID/twrp11
+
+sudo fsarchiver -j8 savedir -Z 13 /mnt/recovery/aosp_nonewvendor_sb4.fsa /mnt/development/aosp 
+
+
+sudo fsarchiver -j8 savedir -Z 10 /mnt/recovery/LAST_RECOVERY_DEBIAN/dev-lineage-last.fsa /mnt/development/DEV/lineage-19.1
+
+sudo fsarchiver -j8 savedir -Z 10 /mnt/recovery/LAST_RECOVERY_DEBIAN/dev-aosp-last.fsa /mnt/development/DEV/aosp
+
+sudo fsarchiver -j8 savedir -Z 10 /mnt/recovery/LAST_RECOVERY_DEBIAN/dev-gapps-last.fsa /mnt/development/DEV/GApps
+
+sudo fsarchiver -j8 savedir -Z 10 /media/m/FAILSAFE/DebianHome.fsa /home/m

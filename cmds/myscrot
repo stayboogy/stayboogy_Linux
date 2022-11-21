@@ -1,0 +1,5 @@
+cd /home/m/Pictures/Screenshots
+/usr/bin/scrot "$@"
+play /usr/share/sounds/freedesktop/stereo/camera-shutter.oga
+exit
+

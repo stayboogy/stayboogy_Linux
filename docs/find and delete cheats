@@ -1,0 +1,5 @@
+sudo find -type d -name "some-directory"
+sudo find -type d -name "some-directory" -exec rm -rf {} \;
+
+sudo find -type f -name "some-filename"
+sudo find -type f -name "some-filename" -exec rm -rf {} \;

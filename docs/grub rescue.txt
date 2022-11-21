@@ -1,0 +1,11 @@
+sudo mount /dev/sdaX /mnt
+
+sudo mount --bind /dev /mnt/dev
+sudo mount --bind /proc /mnt/proc
+sudo mount --bind /sys /mnt/sys 
+
+sudo chroot /mnt
+
+update-grub
+
+sudo grub-install /dev/sdaX --force (to install to partition not bootsector)

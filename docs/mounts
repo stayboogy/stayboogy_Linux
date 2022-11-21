@@ -1,0 +1,17 @@
+userdata /dev/sda1
+
+recovery /dev/sda2
+
+aosp /dev/sda3
+
+ext4 /dev/sdb3
+
+
+sudo mount /dev/sdb3 /mnt/pixel
+sudo mount /dev/sda3 /mnt/aosp
+sudo mount /dev/sda2 /mnt/recovery
+sudo mount /dev/sda1 /mnt/userdata
+
+sudo umount /mnt/aosp
+sudo umount /mnt/pixel
+

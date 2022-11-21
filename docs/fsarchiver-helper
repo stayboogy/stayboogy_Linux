@@ -1,0 +1,11 @@
+
+
+fsarchiver -j16 savefs -Z 17 /media/root/last/LastDebianPerf.fsa /dev/sdb3
+
+fsarchiver -j16 restfs /media/root/last/LastDebianPerf.fsa id=0,dest=/dev/sdb2
+
+fsarchiver -j16 savedir -Z 17 /media/root/last/dir.fsa /path/to/some/dir
+
+fsarchiver -j16 restdir /media/root/last/dir.fsa /path/to/some/dir
+
+

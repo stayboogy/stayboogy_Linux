@@ -1,0 +1,90 @@
+xorg
+xcompmgr
+openbox
+menu
+obmenu
+lightdm
+plank
+gedit
+gnome-terminal
+gnome-disk-utility
+thunar
+network-manager-gnome
+wireless-tools
+midori
+firmware-linux-free
+lightdm-gtk-greeter-settings
+lightdm-gtk-greeter
+obsession
+software-properties-common
+xarchiver
+nitrogen
+lightdm-greeter-settings
+xbacklight
+gnome-screenshot
+mirage
+
+
+-------------------------------------------------------------------------------
+
+su
+apt install sudo software-properties-common gnupg
+
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+
+xorg mate-desktop-environment-core network-manager network-manager-gnome mate-tweak gedit wireless-tools gnome-software synaptic gnome-disk-utility gparted engrampa eom eom-common caja-open-terminal firmware-linux-nonfree
+
+sudo systemctl start NetworkManager.service
+sudo systemctl enable NetworkManager.service
+
+if [[ -z $DISPLAY ]]; then
+exec startx
+fi
+
+
+------------------------------------------------------------------------------------
+
+acpi
+blueman
+firmware-linux
+gdebi
+network-manager
+gparted
+gedit
+gnome-disk-utility
+nitrogen
+xcompmgr
+xorg
+openbox
+cpufrequtils
+synaptic
+irqbalance
+bleachbit
+firmware-misc-nonfree
+software-properties-common
+wireless-tools
+firmware-linux-nonfree
+menu
+
+
+if [[ -z $DISPLAY ]]; then
+exec startx
+fi
+
+
+----------------------------------------------------------------------------------
+
+xorg
+xcompmgr
+openbox
+obmenu
+obsession
+wireless-tools
+wicd
+xbacklight
+firmware-linux-free
+gdebi
+
+
+
+

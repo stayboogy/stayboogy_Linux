@@ -1,0 +1,12 @@
+sudo fallocate -l 16384m /mnt/android.swap
+sudo chmod 600 /mnt/android.swap
+sudo dd if=/dev/zero of=/mnt/android.swap bs=1024 count=16777216
+sudo chmod 600 /mnt/android.swap
+sudo mkswap /mnt/android.swap
+sudo swapon /mnt/android.swap
+sudo gedit /etc/fstab
+swappiness=33
+sudo gedit /etc/fstab
+# add to fstab
+/mnt/android.swap	none	swap	sw	0	0
+

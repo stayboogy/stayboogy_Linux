@@ -1,0 +1,35 @@
+# setup the environment
+
+. build/envsetup.sh
+
+# pick a device to build for
+
+lunch
+
+# same as "make"
+
+m
+
+# "make module" from inside a directory
+
+mm
+
+# "make some-app"
+
+m calendar
+m Dialer
+m Launcher3
+
+# make your data directory and built images clean
+
+m installclean
+
+# make you entire out directory clean
+
+m clean
+
+# string it together
+
+. build/envsetup.sh; lunch stayboogy_redfin-userdebug; m clean; m -j16
+
+

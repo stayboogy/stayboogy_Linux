@@ -1,0 +1,5 @@
+sudo fsarchiver -jX savedir -Z 1-22 /path/to/backup.fsa /path/to/directory/to/be/backed/up
+
+sudo fsarchiver -jX restdir /path/to/backup.fsa /path/to/directory/to/be/restored/to
+
+
